@@ -3,6 +3,7 @@
 <mat-card>
     <form #postForm="ngForm" (submit)="onAddPost(postForm)">
         <mat-form-field>
+            <mat-label>Post Title</mat-label>
             <input 
             matInput 
             type="text" 
@@ -15,6 +16,7 @@
             </mat-error>
         </mat-form-field>
         <mat-form-field>
+            <mat-label>Post Content</mat-label>
             <textarea
             matInput 
             rows="5"
