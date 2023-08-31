@@ -9,9 +9,4 @@ import { Post } from './posts/post.model';
 export class AppComponent {
   title = 'Practice';
 
-  storedPosts:Post[] = [];
-
-  onPostAdded(post:Post){
-    this.storedPosts.push(post);
-  }
 }

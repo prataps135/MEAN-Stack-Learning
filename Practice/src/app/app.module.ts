@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
+import { PostsService } from './posts/posts.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { PostListComponent } from './posts/post-list/post-list.component';
     FormsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
